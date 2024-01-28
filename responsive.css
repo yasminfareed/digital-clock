@@ -1,4 +1,4 @@
-body {
+Hibody {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -30,14 +30,15 @@ body {
   
     .clock, .timer, .stopWatch {
       width: 33%;
-        margin-top: 250px;
-    }
+      webkit-box-reflect: none ;
+  }
+
   }
   
   @media only screen and (min-width: 768px) {
     .clock, .timer, .stopWatch {
       width: 25%;
-        margin-top: 250px;
+        webkit-box-reflect: none ;
     }
 
   }
