@@ -1,0 +1,86 @@
+
+
+main{
+    background: rgb(47,6,94);
+    background: linear-gradient(60deg, #6D36F1 0%, rgba(226,93,232,1) 93%, rgba(242,160,241,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  h2 {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .clock {
+    background-color: #0095EF;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));  
+
+}
+
+.timer{
+    background-color: #0095EF;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));  
+
+}
+
+.stopWatch {
+    background-color: #FF0169;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));  
+
+}
+
+  div {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    transform: skew translate(-47px,-43px);
+  }
+
+  button {
+    background-color: #007ED2;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  select, input {
+    padding: 8px;
+    margin-right: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  li {
+    padding: 5px;
+  }
+
+  /* 3D styles */
+  div:hover {
+    transform: scale(1.05);
+  }
+
+  button, select, input {
+    transform: translateZ(0);
+  }
+
+  

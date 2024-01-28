@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Digital-Clock</title>
+</head>
+<body>
+<main>
+  <!-- Digital Clock -->
+
+  <div class="clock">
+    <h2>Digital Clock</h2>
+    <p id="digitalClock"></p>
+    <button onclick="toggleClock()">Start/Stop Clock</button>
+    <label>Time Format:
+      <select id="timeFormat" onchange="changeTimeFormat()">
+        <option value="12">12 Hours</option>
+        <option value="24">24 Hours</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- Timer -->
+  <div class="timer">
+    <h2>Timer</h2>
+    <label>Set Timer:
+      <input type="number" id="timerHours" placeholder="Hours" min="0" step="1">
+      <input type="number" id="timerMinutes" placeholder="Minutes" min="0" max="59" step="1">
+    </label>
+    <br>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+
+  <!-- Stop Watch -->
+  <div class="stopWatch">
+    <h2>Stop Watch</h2>
+    <p id="stopWatch">00:00:00</p>
+    <button onclick="startStopWatch()">Start/Stop</button>
+    <button onclick="recordLap()">Record Lap</button>
+    <button onclick="resetStopWatch()">Reset</button>
+    <ul id="lapList"></ul>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
